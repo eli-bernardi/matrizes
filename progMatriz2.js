@@ -15,10 +15,10 @@ let mat2 =[]
 for (let i = 0; i < 6; i++) {
     mat2[i] = []
      for (let j = 0; j < 6; j++) {
-         if (i === j) {
-             mat2[i][j] = 1
+         if (i % 3 === 0) {
+             mat2[i][j] = 3
          } else {
-             mat2[i][j] = 0
+             mat2[i][j] = 7
          }
      }
  }
