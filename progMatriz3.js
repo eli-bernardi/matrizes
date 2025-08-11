@@ -5,10 +5,10 @@ let mat = [
 ]
 
 let mat2 = []
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 5; i++) {
     mat2[i] = []
-    for (let j = 0; j < 6; j++) {
-        mat2[i][j] = i % 2 === 0 ? 3 : 5
+    for (let j = 0; j < 5; j++) {
+        mat2[i][j] = i % 2 === 0 ? 7 : 3
     }
 }
 
@@ -38,7 +38,9 @@ let somaMatrizes2 = somarMat2()
 
 // Exibir resultados
 console.table(mat)
-console.log("Soma da matriz mat:", somaMatrizes)
+console.log('Soma de mat:', somaMatrizes)
+console.log('-------------------')
 
 console.table(mat2)
-console.log("Soma da matriz mat2:", somaMatrizes2)
+console.log('Soma de mat2:', somaMatrizes2)
+console.log('-------------------')
